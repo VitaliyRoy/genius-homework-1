@@ -1,0 +1,104 @@
+:root {
+  --color-primary-dark: #011c44;
+  --color-primary-light: #fff;
+  --color-brand-light: #2b7fff;
+  --color-brand-dark: #000;
+  --color-hero-under-btn-text: #4a4a4a;
+  --color-brand-grey: #747272;
+}
+/* Base */
+body {
+  color: var(--color-primary-dark);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Button */
+.button {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+/* Header */
+.header-link {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: var(--color-brand-light);
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--color-brand-light);
+}
+
+.hero-under-btn-text {
+  color: var(--color-hero-under-btn-text);
+}
+
+/* Transformation section */
+.section-title {
+  color: var(--color-primary-dark);
+}
+
+.section-title .accent {
+  color: var(--color-brand-light);
+}
+
+/* Why us section */
+.why-us-text {
+  color: var(--color-brand-dark);
+}
+
+/* Procedure section */
+.procedure-title {
+  color: var(--color-primary-light);
+}
+
+/* Contact section */
+.contact-title {
+  color: var(--color-primary-light);
+}
+
+.contact-title .accent {
+  color: var(--color-brand-light);
+}
+
+.contact-under-btn-text {
+  color: var(--color-brand-grey);
+}
+
+/* Footer */
+.footer-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-brand-light);
+}
+
+.address-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+}
+
+.address-copyright {
+  color: var(--color-brand-grey);
+}
