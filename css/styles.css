@@ -9,6 +9,14 @@
 /* Base */
 body {
   color: var(--color-primary-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+address {
+  font-style: normal;
 }
 
 ul {
@@ -18,6 +26,8 @@ ul {
 /* Button */
 .button {
   color: var(--color-primary-light);
+  font-weight: 600;
+  line-height: 1.166;
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
   border-radius: 32px;
@@ -32,44 +42,82 @@ ul {
 /* Header */
 .header-link {
   color: var(--color-primary-dark);
+  line-height: 1.172;
   text-decoration: none;
 }
 
 .header-link:hover {
   color: var(--color-brand-light);
+  font-weight: 700;
+  line-height: 1.166;
 }
 
 /* Hero section */
+.hero-over-title-text {
+  line-height: 1.172;
+}
+
 .hero-title {
   color: var(--color-brand-light);
+  font-family: 'Play', sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.814;
+  text-transform: capitalize;
 }
 
 .hero-under-btn-text {
   color: var(--color-hero-under-btn-text);
+  font-size: 12px;
+  text-align: center;
 }
 
 /* Transformation section */
 .section-title {
   color: var(--color-primary-dark);
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.156;
 }
 
 .section-title .accent {
   color: var(--color-brand-light);
 }
 
+.section-title .uppercase {
+  text-transform: capitalize;
+}
+
+.transformation-text {
+  font-size: 22px;
+  line-height: 1.727;
+}
+
+.transformation-text .darker {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
 /* Why us section */
 .why-us-text {
   color: var(--color-brand-dark);
+  line-height: 1.333;
 }
 
 /* Procedure section */
 .procedure-title {
   color: var(--color-primary-light);
+  font-size: 22px;
+  line-height: 1.181;
 }
 
 /* Contact section */
 .contact-title {
   color: var(--color-primary-light);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.172;
 }
 
 .contact-title .accent {
@@ -78,20 +126,30 @@ ul {
 
 .contact-under-btn-text {
   color: var(--color-brand-grey);
+  font-size: 12px;
+}
+.contact-link {
+  color: var(--color-brand-grey);
+  text-decoration-skip-ink: none;
 }
 
 /* Footer */
 .footer-link {
   color: var(--color-primary-light);
+  font-size: 16px;
+  line-height: 1.175;
   text-decoration: none;
 }
 
 .footer-link:hover {
   color: var(--color-brand-light);
+  font-weight: 700;
 }
 
 .address-link {
   color: var(--color-primary-light);
+  font-size: 16px;
+  line-height: 1.175;
   text-decoration: none;
 }
 
@@ -101,4 +159,6 @@ ul {
 
 .address-copyright {
   color: var(--color-brand-grey);
+  font-size: 13px;
+  line-height: 1.169;
 }
