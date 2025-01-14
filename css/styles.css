@@ -7,25 +7,56 @@
   --color-brand-grey: #747272;
 }
 /* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-primary-dark);
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+a {
+  display: inline-block;
 }
 
 address {
   font-style: normal;
 }
 
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 /* Button */
 .button {
   color: var(--color-primary-light);
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.166;
   background-color: var(--color-brand-light);
@@ -40,6 +71,26 @@ ul {
 }
 
 /* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .header-link {
   color: var(--color-primary-dark);
   line-height: 1.172;
@@ -48,13 +99,24 @@ ul {
 
 .header-link:hover {
   color: var(--color-brand-light);
-  font-weight: 700;
-  line-height: 1.166;
 }
 
 /* Hero section */
+.hero-section {
+  padding: 16.52px 0 126.48px;
+  background-image: url(../images/hero-section-background.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+
+.hero-container {
+  padding-left: 106px;
+}
+
 .hero-over-title-text {
   line-height: 1.172;
+  margin-bottom: 16px;
 }
 
 .hero-title {
@@ -63,22 +125,54 @@ ul {
   font-size: 140px;
   font-weight: 700;
   line-height: 0.814;
+  margin-bottom: 40px;
   text-transform: capitalize;
+}
+
+.hero-title.limited {
+  max-width: 529px;
+}
+
+.hero-btn {
+  margin-bottom: 14px;
+}
+
+.hero-under-btn-text-container {
+  max-width: 238px;
+  text-align: center;
 }
 
 .hero-under-btn-text {
   color: var(--color-hero-under-btn-text);
   font-size: 12px;
-  text-align: center;
+  margin-bottom: 0;
 }
 
 /* Transformation section */
+.transformation-section {
+  padding: 0 0 88px;
+}
+
+.transformation-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.transformation-content {
+  max-width: 709px;
+}
+
 .section-title {
   color: var(--color-primary-dark);
   font-family: 'Play', sans-serif;
   font-size: 64px;
   font-weight: 700;
   line-height: 1.156;
+}
+
+.section-title.centered {
+  text-align: center;
 }
 
 .section-title .accent {
@@ -89,9 +183,15 @@ ul {
   text-transform: capitalize;
 }
 
+.transformation-title {
+  max-width: 529px;
+  margin: 40px 0;
+}
+
 .transformation-text {
   font-size: 22px;
   line-height: 1.727;
+  margin-bottom: 40px;
 }
 
 .transformation-text .darker {
@@ -99,13 +199,63 @@ ul {
   text-transform: capitalize;
 }
 
+.transformation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 /* Why us section */
+.why-us-section {
+  padding: 88px 0 48px;
+}
+
+.why-us-container {
+  width: 100%;
+  max-width: 1108px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.why-us-title {
+  max-width: 432px;
+  margin: 0 auto 48px;
+}
+
+.why-us-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.why-us-item {
+  flex-basis: calc((100% - 112px) / 3);
+}
+
+.why-us-card {
+  height: 181px;
+  padding: 24px 32px;
+  text-align: center;
+  background-color: var(--color-primary-light);
+  border: 1px solid black; /*remove*/
+  border-radius: 32px;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+}
+
+.why-us-icon {
+  fill: var(--color-brand-light);
+}
+
 .why-us-text {
   color: var(--color-brand-dark);
   line-height: 1.333;
 }
 
 /* Procedure section */
+.procedure-section {
+  padding: 48px 0;
+}
+
 .procedure-title {
   color: var(--color-primary-light);
   font-size: 22px;
@@ -113,6 +263,10 @@ ul {
 }
 
 /* Contact section */
+.contact-section {
+  padding: 48px 0 96px;
+}
+
 .contact-title {
   color: var(--color-primary-light);
   font-size: 22px;
