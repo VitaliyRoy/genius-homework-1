@@ -71,6 +71,16 @@ ul {
 }
 
 /* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 32px 0;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -105,13 +115,29 @@ ul {
   fill: var(--color-brand-light);
 }
 
+.header-address-list {
+  display: flex;
+  gap: 32px;
+}
+
+/* .header .container::before {
+  position: absolute;
+  left: -76px;
+  top: -32px;
+  width: 1440px;
+  height: 725px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-image: url(../images/hero-background.png);
+  content: '';
+} */
+
 /* Hero section */
 .hero-section {
-  padding: 16.52px 0 126.48px;
-  background-image: url(../images/hero-section-background.jpg);
+  padding: 122.52px 0 126.48px;
+  background-image: url(../images/hero-background.png);
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: cover;
 }
 
 .hero-container {
@@ -138,6 +164,7 @@ ul {
 }
 
 .hero-btn {
+  padding: 16px 32px;
   margin-bottom: 14px;
 }
 
@@ -160,7 +187,7 @@ ul {
 .transformation-container {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 32px;
 }
 
 .transformation-content {
@@ -215,6 +242,10 @@ ul {
   padding: 88px 0 48px;
 }
 
+.why-us-section .container {
+  position: relative;
+}
+
 .why-us-container {
   width: 100%;
   max-width: 1108px;
@@ -242,7 +273,6 @@ ul {
   padding: 24px 32px;
   text-align: center;
   background-color: var(--color-primary-light);
-  border: 1px solid black; /*remove*/
   border-radius: 32px;
   box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
 }
@@ -254,6 +284,18 @@ ul {
 .why-us-text {
   color: var(--color-brand-dark);
   line-height: 1.333;
+}
+
+.why-us-section .container::before {
+  position: absolute;
+  left: -76px;
+  top: -200px;
+  width: 1440px;
+  height: 1507px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-image: url(../images/why-us-background.png);
+  content: '';
 }
 
 /* Procedure section */
