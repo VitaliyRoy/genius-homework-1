@@ -1,0 +1,85 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: rgba(1, 31, 74, 0.4);
+  transition: opacity 0.2s, visibility 0.2s;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 723px;
+  height: 100%;
+  max-height: 681px;
+  padding: 42px 141px 42px 144px;
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/modal-background.png);
+  border-radius: 38px;
+  overflow-y: auto;
+
+  &__button-close {
+    position: absolute;
+    top: 58px;
+    right: 50px;
+  }
+
+  &__title {
+    font-family: 'Play', sans-serif;
+    color: var(--color-primary-light);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.156;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__above-form-title {
+    max-width: 274px;
+    margin: 0 auto 32px;
+    color: var(--color-primary-light);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.172;
+    text-align: center;
+  }
+
+  &__form-field {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__under-button-text {
+    text-align: center;
+    max-width: 213px;
+    margin: 0 auto;
+    color: var(--color-brand-grey);
+    font-size: 12px;
+  }
+
+  &__link {
+    color: var(--color-brand-grey);
+    text-decoration-skip-ink: none;
+  }
+}

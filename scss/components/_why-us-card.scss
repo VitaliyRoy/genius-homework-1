@@ -1,0 +1,17 @@
+.why-us-card {
+  height: 181px;
+  padding: 24px 32px;
+  text-align: center;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+
+  &__icon {
+    fill: var(--color-brand-light);
+  }
+
+  &__text {
+    color: var(--color-brand-dark);
+    line-height: 1.333;
+  }
+}

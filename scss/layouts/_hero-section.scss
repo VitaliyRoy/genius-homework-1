@@ -1,0 +1,43 @@
+.hero-section {
+  padding: 122.52px 0 126.48px;
+  background-image: url(../images/hero-background.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  &__container {
+    padding-left: 106px;
+  }
+
+  &__over-title-text {
+    line-height: 1.172;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    color: var(--color-brand-light);
+    font-family: 'Play', sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.814;
+    margin-bottom: 40px;
+
+    &--limited {
+      max-width: 529px;
+    }
+  }
+
+  &__button {
+    margin-bottom: 14px;
+  }
+
+  &__under-button-text-container {
+    max-width: 238px;
+    text-align: center;
+  }
+
+  &__under-button-text {
+    color: var(--color-hero-under-btn-text);
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}

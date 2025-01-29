@@ -1,0 +1,94 @@
+.transformation-section {
+  padding: 0 0 88px;
+
+  &__container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  &__content {
+    max-width: 709px;
+    padding: 40px 0 0;
+  }
+
+  &__title {
+    max-width: 529px;
+    margin: 0 0 40px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 1.727;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+  }
+
+  &__item:nth-child(even) {
+    align-self: flex-end;
+  }
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  &__decoration,
+  &__decoration-img {
+    position: absolute;
+  }
+
+  &__decoration-img {
+    animation-name: spin;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    &:nth-child(1) {
+      left: 876px;
+      top: 360px;
+    }
+
+    &:nth-child(2) {
+      left: 1232px;
+      top: 44px;
+    }
+
+    &:nth-child(3) {
+      left: 1224px;
+      top: 278px;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+  }
+
+  3% {
+    transform: rotate(2deg) scale(0.4);
+  }
+
+  45% {
+    transform: rotate(28deg) scale(1.4);
+  }
+
+  47% {
+    transform: rotate(29deg) scale(1.5);
+  }
+
+  50% {
+    transform: rotate(30deg) scale(1.4);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(0.5);
+  }
+}

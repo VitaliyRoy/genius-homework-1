@@ -1,0 +1,36 @@
+.input {
+  &__lable {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+  }
+
+  &__control {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 310px;
+    max-height: 52px;
+    padding: 18px 32.85px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 1.169;
+    font-weight: 400;
+    color: var(--color-primary-light);
+    border: 2px solid var(--color-brand-grey);
+    border-radius: 32px;
+    background-color: transparent;
+    transition: background-color 0.2s;
+
+    &:focus {
+      background-color: var(--color-brand-grey);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-primary-light);
+      font-size: 13px;
+      line-height: 1.169;
+    }
+  }
+}

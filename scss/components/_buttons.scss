@@ -1,0 +1,18 @@
+.button {
+  color: var(--color-primary-light);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.166;
+  padding: 14px 30px;
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 32px;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+
+  &:hover {
+    color: var(--color-primary-dark);
+    background-color: transparent;
+  }
+}
