@@ -5,20 +5,18 @@
     margin-bottom: 48px;
   }
 
-  &__container {
+  &__slider {
     display: flex;
     align-items: center;
     padding: 0 12px;
     gap: 32px;
   }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+  &__container {
+    overflow: hidden;
   }
 
-  &__item {
-    flex-basis: calc((100% - 32px) / 3);
+  &__list {
+    margin-bottom: 32px;
   }
 }

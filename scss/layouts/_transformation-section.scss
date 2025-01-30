@@ -45,6 +45,7 @@
   }
 
   &__decoration-img {
+    max-width: none;
     animation-name: spin;
     animation-duration: 3.5s;
     animation-iteration-count: infinite;

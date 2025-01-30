@@ -32,8 +32,21 @@
 
   &__button-close {
     position: absolute;
+    width: 32px;
+    height: 32px;
     top: 58px;
     right: 50px;
+    padding: 0;
+    flex-shrink: 0;
+    background-color: transparent;
+    fill: var(--color-primary-light);
+    cursor: pointer;
+    border: none;
+    transition: fill 0.2s;
+
+    &:hover {
+      fill: var(--color-brand-light);
+    }
   }
 
   &__title {
