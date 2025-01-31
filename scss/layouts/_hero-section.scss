@@ -1,43 +1,87 @@
 .hero-section {
-  padding: 122.52px 0 126.48px;
-  background-image: url(../images/hero-background.png);
+  padding: 71px 0 56px;
+  background-image: url(../images/hero-background-mobile.png);
   background-repeat: no-repeat;
   background-position: right top;
+  background-size: cover;
+
+  @media screen and (min-width: $bp-mobile) {
+    padding: 122.52px 0 126.48px;
+    background-image: url(../images/hero-background.png);
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    background-size: auto;
+    &__container {
+      padding-left: 106px;
+    }
+  }
 
   &__container {
-    padding-left: 106px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-mobile) {
+      text-align: start;
+    }
   }
 
   &__over-title-text {
-    line-height: 1.172;
-    margin-bottom: 16px;
+    font-size: 12px;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      line-height: 1.172;
+      margin-bottom: 16px;
+    }
   }
 
   &__title {
     color: var(--color-brand-light);
     font-family: 'Play', sans-serif;
-    font-size: 140px;
+    font-size: 54px;
     font-weight: 700;
-    line-height: 0.814;
-    margin-bottom: 40px;
+    line-height: 0.851;
+    margin-bottom: 32px;
 
-    &--limited {
-      max-width: 529px;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 140px;
+      line-height: 0.814;
+      margin-bottom: 40px;
+
+      &--limited {
+        max-width: 529px;
+      }
     }
   }
 
   &__button {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-mobile) {
+      margin-bottom: 14px;
+    }
   }
 
   &__under-button-text-container {
     max-width: 238px;
     text-align: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-mobile) {
+      margin: 0 0;
+    }
   }
 
   &__under-button-text {
     color: var(--color-hero-under-btn-text);
-    font-size: 12px;
+    font-size: 11px;
+    line-height: 1.63;
     margin-bottom: 0;
+
+    @media screen and (min-width: $bp-mobile) {
+      font-size: 12px;
+      line-height: 1.5;
+    }
   }
 }

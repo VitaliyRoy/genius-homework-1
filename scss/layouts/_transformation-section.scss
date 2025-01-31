@@ -1,5 +1,9 @@
 .transformation-section {
-  padding: 0 0 88px;
+  padding: 0 0 52px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 0 0 88px;
+  }
 
   &__container {
     display: flex;
@@ -9,30 +13,52 @@
   }
 
   &__content {
-    max-width: 709px;
-    padding: 40px 0 0;
+    padding: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 709px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 40px 0 0;
+    }
   }
 
   &__title {
-    max-width: 529px;
-    margin: 0 0 40px;
+    max-width: 264px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 529px;
+      margin-bottom: 40px;
+    }
   }
 
   &__text {
-    font-size: 22px;
-    line-height: 1.727;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      line-height: 1.727;
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 40px;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      gap: 40px;
+    }
   }
 
-  &__item:nth-child(even) {
-    align-self: flex-end;
+  &__item {
+    &:nth-child(even) {
+      align-self: flex-end;
+    }
   }
 
   &__img {
@@ -41,7 +67,12 @@
 
   &__decoration,
   &__decoration-img {
-    position: absolute;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+      display: block;
+    }
   }
 
   &__decoration-img {
@@ -64,6 +95,22 @@
     &:nth-child(3) {
       left: 1224px;
       top: 278px;
+    }
+  }
+
+  &__modal-decoration-img {
+    position: absolute;
+    display: block;
+    width: 40px;
+    right: 10px;
+    bottom: -45px;
+    animation-name: spin;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
     }
   }
 }

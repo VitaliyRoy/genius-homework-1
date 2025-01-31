@@ -61,12 +61,16 @@
 
   &__above-form-title {
     max-width: 274px;
-    margin: 0 auto 32px;
+    margin: 0 auto 24px;
     color: var(--color-primary-light);
     font-size: 22px;
     font-weight: 600;
     line-height: 1.172;
     text-align: center;
+
+    @media screen and (min-width: $bp-mobile) {
+      margin: 0 auto 32px;
+    }
   }
 
   &__form-field {
@@ -89,6 +93,7 @@
     margin: 0 auto;
     color: var(--color-brand-grey);
     font-size: 12px;
+    line-height: 1.5;
   }
 
   &__link {

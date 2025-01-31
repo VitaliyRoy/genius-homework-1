@@ -24,7 +24,7 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a href="/">
+            <a class="header__logo" href="/">
               <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
             </a>
             <ul class="header__menu">
@@ -48,7 +48,7 @@
               </li>
             </ul>
           </nav>
-          <address>
+          <address class="header__address">
             <ul class="header__address-list">
               <li>
                 <a href="#">
@@ -73,6 +73,11 @@
               </li>
             </ul>
           </address>
+          <button class="header__burger" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -152,6 +157,11 @@
                 alt="Мала зірка"
               />
             </div>
+            <img
+              class="transformation-section__modal-decoration-img"
+              src="./images/large-star.png"
+              alt="Велика зірка"
+            />
           </div>
         </div>
       </section>
@@ -204,13 +214,14 @@
       </section>
       <section class="procedure-section" id="procedure-section">
         <div class="container">
-          <h2
-            class="procedure-section__title section-title section-title--centered"
-          >
+          <h2 class="section-title section-title--centered">
             Наші <span class="text-brand">процедури</span>
           </h2>
           <div class="procedure-section__slider">
-            <button class="carousel-button prev" type="button">
+            <button
+              class="procedure-section__button carousel-button prev"
+              type="button"
+            >
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -285,7 +296,10 @@
                 <span class="pagination-button"></span>
               </div>
             </div>
-            <button class="carousel-button next" type="button">
+            <button
+              class="procedure-section__button carousel-button next"
+              type="button"
+            >
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -304,8 +318,6 @@
             <iframe
               class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2537.4683382521785!2d30.7754093!3d50.5068521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1736345286619!5m2!1sru!2sua"
-              width="605"
-              height="481"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
