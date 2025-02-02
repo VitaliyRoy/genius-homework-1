@@ -5,17 +5,45 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 56px 0;
+  padding: 32px 0 52px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 56px 0;
+  }
 
   &__container {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      text-align: start;
+      gap: 20px;
+    }
   }
 
   &__nav {
     display: flex;
-    flex-basis: 50%;
-    gap: 20px;
+    flex-direction: column;
+    gap: 42px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      gap: 20px;
+    }
+  }
+
+  &__logo {
+    width: 57px;
+    height: 30px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: auto;
+      height: auto;
+    }
   }
 
   &__logo,
@@ -25,26 +53,74 @@
 
   &__address {
     display: flex;
-    justify-content: space-between;
-    flex-basis: 50%;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-basis: 50%;
+      gap: 20px;
+    }
+  }
+
+  &__address-list {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
   }
 
   &__link {
     color: var(--color-primary-light);
-    font-size: 16px;
-    line-height: 1.175;
+    font-size: 14px;
+    line-height: 1.171;
     margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+      line-height: 1.175;
+    }
+  }
+
+  &__menu &__privacy-policy {
+    display: block;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__privacy-policy {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
   }
 
   &__address-icons {
     display: flex;
-    gap: 24px;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 24px;
+    }
   }
 
   &__address-icon {
+    width: 32px;
+    height: 32px;
     fill: var(--color-primary-light);
     transition: fill 0.2s;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 42px;
+      height: 42px;
+    }
 
     &:hover {
       fill: var(--color-brand-light);
@@ -53,18 +129,25 @@
 
   &__address-copyright {
     color: var(--color-brand-grey);
-    font-size: 13px;
-    line-height: 1.169;
+    font-size: 12px;
+    line-height: 1.5;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 13px;
+      line-height: 1.169;
+    }
   }
 
   &::after {
-    position: absolute;
-    width: 247px;
-    height: 152px;
-    right: 0;
-    bottom: 0;
-    background-image: url(../images/footer-decor.png);
-    background-repeat: no-repeat;
-    content: '';
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      width: 247px;
+      height: 152px;
+      right: 0;
+      bottom: 0;
+      background-image: url(../images/footer-decor.png);
+      background-repeat: no-repeat;
+      content: '';
+    }
   }
 }

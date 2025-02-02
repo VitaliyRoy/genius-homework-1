@@ -73,11 +73,95 @@
               </li>
             </ul>
           </address>
-          <button class="header__burger" type="button">
+          <button class="header__burger menu-btn-open" type="button">
             <svg width="24" height="24">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
+          <div class="mobile-menu">
+            <div class="mobile-menu__container">
+              <button
+                class="mobile-menu__btn-close menu-btn-close"
+                type="button"
+              >
+                <svg class="mobile-menu__button-close-icon">
+                  <use href="./images/icons.svg#icon-modal-close-button"></use>
+                </svg>
+              </button>
+              <nav>
+                <a class="mobile-menu__logo" href="./index.html">
+                  <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
+                </a>
+                <ul>
+                  <li>
+                    <a
+                      class="link mobile-menu__link"
+                      href="#transformation-section"
+                      >Про нас</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link mobile-menu__link" href="#why-us-section"
+                      >Чому ми</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link mobile-menu__link" href="#procedure-section"
+                      >Наші процедури</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link mobile-menu__link" href="#contact-section"
+                      >Контакти</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <address>
+                <ul class="mobile-menu__address-list">
+                  <li>
+                    <a href="#">
+                      <svg
+                        class="mobile-menu__address-icon"
+                        width="32"
+                        height="32"
+                      >
+                        <use
+                          href="./images/icons.svg#icon-telephone-header"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        class="mobile-menu__address-icon"
+                        width="32"
+                        height="32"
+                      >
+                        <use
+                          href="./images/icons.svg#icon-facebook-header"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        class="mobile-menu__address-icon"
+                        width="32"
+                        height="32"
+                      >
+                        <use
+                          href="./images/icons.svg#icon-instagram-header"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -396,6 +480,15 @@
               <li><a class="link footer__link" href="#">Чому ми</a></li>
               <li><a class="link footer__link" href="#">Наші процедури</a></li>
               <li><a class="link footer__link" href="#">Контакти</a></li>
+              <li>
+                <a
+                  class="link footer__link footer__privacy-policy"
+                  href="#"
+                  target="_blank"
+                >
+                  Політика конфіденційності
+                </a>
+              </li>
             </ul>
           </nav>
           <address class="footer__address">
@@ -426,24 +519,28 @@
               </ul>
               <div class="footer__address-icons">
                 <a href="#">
-                  <svg class="footer__address-icon" width="42" height="42">
+                  <svg class="footer__address-icon">
                     <use href="./images/icons.svg#icon-telephone-footer"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="footer__address-icon" width="42" height="42">
+                  <svg class="footer__address-icon">
                     <use href="./images/icons.svg#icon-facebook-footer"></use>
                   </svg>
                 </a>
                 <a href="#">
-                  <svg class="footer__address-icon" width="42" height="42">
+                  <svg class="footer__address-icon">
                     <use href="./images/icons.svg#icon-instagram-footer"></use>
                   </svg>
                 </a>
               </div>
             </div>
             <div class="footer__address-info">
-              <a class="link footer__link" href="#" target="_blank">
+              <a
+                class="link footer__link footer__privacy-policy"
+                href="#"
+                target="_blank"
+              >
                 Політика конфіденційності
               </a>
               <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
@@ -456,7 +553,7 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__button-close modal-btn-close" type="button">
-          <svg width="32" height="32">
+          <svg class="modal__button-close-icon" width="32" height="32">
             <use href="./images/icons.svg#icon-modal-close-button"></use>
           </svg>
         </button>
@@ -525,5 +622,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/procedure-slider.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

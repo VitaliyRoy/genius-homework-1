@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
@@ -7,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px;
   background-color: rgba(1, 31, 74, 0.4);
   transition: opacity 0.2s, visibility 0.2s;
 
@@ -24,18 +25,22 @@
   max-width: 723px;
   height: 100%;
   max-height: 681px;
-  padding: 42px 141px 42px 144px;
+  padding: 48px;
   background-color: var(--color-primary-dark);
   background-image: url(../images/modal-background.png);
   border-radius: 38px;
   overflow-y: auto;
 
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 141px 42px 144px;
+  }
+
   &__button-close {
     position: absolute;
-    width: 32px;
-    height: 32px;
-    top: 58px;
-    right: 50px;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 30px;
     padding: 0;
     flex-shrink: 0;
     background-color: transparent;
@@ -44,19 +49,42 @@
     border: none;
     transition: fill 0.2s;
 
+    @media screen and (min-width: $bp-tablet) {
+      width: 32px;
+      height: 32px;
+      top: 58px;
+      right: 50px;
+    }
+
     &:hover {
       fill: var(--color-brand-light);
+    }
+  }
+
+  &__button-close-icon {
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 32px;
+      height: 32px;
     }
   }
 
   &__title {
     font-family: 'Play', sans-serif;
     color: var(--color-primary-light);
-    font-size: 64px;
+    font-size: 32px;
     font-weight: 700;
-    line-height: 1.156;
+    line-height: 1.181;
+    margin-bottom: 24px;
     text-align: center;
-    margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+      line-height: 1.156;
+      margin-bottom: 40px;
+    }
   }
 
   &__above-form-title {
